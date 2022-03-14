@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1 - Practica 2 React
+    </title>
+</head>
+
+<body>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <div id="root"> </div>
+
+    <script type="text/javascript">
+
+        /* Tu código React va aquí
+            No olvides que el elemento padre debe llamarse igual que el elemento que espera el render */
+
+        const elemento1 = React.createElement(
+            "h2",
+            [key = 1],
+            "¡Hola!"
+        );
+
+        const elemento2V = React.createElement(
+            "span",
+            [key = 2],
+            " Mundo"
+        );
+
+        const elemento2 = React.createElement(
+            "p",
+            [key = 2],
+            ["Hola", elemento2V]
+        );
+
+        const div_el =  React.createElement(
+            "div",
+            null,
+            [elemento1, elemento2]
+        );
+
+    ReactDOM.render(div_el, document.getElementById("root"));
+
+    </script>
+
+    
+
+</body>
+
+</html>

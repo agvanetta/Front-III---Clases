@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <div id="root"> </div>
+
+    <script type="text/javascript">
+
+        /* Tu código React va aquí
+         No olvides que el elemento padre debe llamarse igual que el elemento que espera el render */
+
+        const titulo = React.createElement("h1", [key = 1], "Con lo visto hasta ahora");
+
+        const titulo2 = React.createElement("h2", [key = 2], "Replica este HTML");
+
+        const titulo3 = React.createElement("h3", [key = 3], "Usando");
+
+        const titulo4 = React.createElement("h4", [key = 4], "React.js");
+
+        const footer = React.createElement("footer", [key = 5], "Suerte!");
+
+        const div_el = React.createElement("div", null, [titulo, titulo2, titulo3, titulo4, footer]);
+
+        ReactDOM.render(div_el, document.getElementById("root"));
+
+    </script>
+
+</body>
+
+</html>

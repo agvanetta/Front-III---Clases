@@ -1,0 +1,38 @@
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script> <!-- Acceso a la biblioteca de react-->
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> <!-- Acceso Api reacDOM para usar el render-->
+<script  src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <!--Përmite usar JSX en el navegador via Babel-->
+
+<div id="root"> </div> <!-- por convencion Identificarlo como root-->
+
+<script src="./pruebaJSX.jsx" type ="text/babel">   </script>
+------------------------------------------------------------------------------------------      
+const div_el = (
+  <div>
+    <p key={1}> Soy un paragraph</p>
+    <p key={2}> Soy un paragraph</p>
+  </div>
+);
+
+
+ReactDOM.render(div_el, document.getElementById("root"));
+
+---------------------------------------------- OPCION VIEJA EN HTML -----------------------------------
+      
+    /* Tu código React va aquí
+     No olvides que el elemento padre debe llamarse igual que el elemento que espera el render */
+            
+            
+ReactDOM.render(div_el, document.getElementById("root"));
+
+</script>
+
+----------------------------------------
+
+
+React.createElement(
+               type, // "p"
+               [props], // " [ key = 1 ]
+               [...children] // [p_1 , p_2] o "Hola mundo" o ["Hola", p_2]
+            );
+
+const div_el = React.createElement("div", null, [titulo, titulo2, titulo3, titulo4, footer]);
