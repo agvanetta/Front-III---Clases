@@ -3,6 +3,7 @@ import React, {Component} from "react";
 // Funcion expresada con arrow function
 //const Componente = props => <h2>{props.mensaje}</h2>
 
+//rcf
 
 // Componente funcional
 // function Componente(props){
