@@ -8,6 +8,7 @@ import Header from "./Components/Header";
 function App() {
   return (
     <section className="General">
+      <meta name="viewport" content="initial-scale=1"></meta>
       <Header title="The largest companies in the world" />
       <div className="App-header">
         {companies.map((companyMap, index) => (

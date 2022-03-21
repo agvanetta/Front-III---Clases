@@ -11,8 +11,8 @@
   text-align: center;
 }
 .General {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 .App-header {
@@ -59,4 +59,17 @@
 
 .img:hover {
   filter: opacity(0.8);
+}
+
+
+ /* Responsive 
+ 480px Maxima de celulares (600)
+ 481 - 768 tablet
+ 769-1200px Monitores*/ 
+ 
+@media screen and (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+  height: 100%;
+  }
 }
