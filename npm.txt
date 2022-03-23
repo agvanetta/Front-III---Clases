@@ -1,0 +1,8 @@
+1- index html pego fuente "roboto" https://fonts.google.com/specimen/Roboto pega antes de que termine el head. Despues de "REACT APP"
+
+2- Instala 2 librerias: npm i styled-components y npm i react-icons
+https://react-icons.github.io/react-icons/
+
+ npm install --save sweetalert2
+
+npm install formik --save
