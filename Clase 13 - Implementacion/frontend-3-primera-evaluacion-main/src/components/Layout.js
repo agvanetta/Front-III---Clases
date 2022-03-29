@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Opciones from './Opciones';
 import Recordatorio from './Recordatorio';
 import data from './data';
+import Swal from 'sweetalert2';
 
 class Main extends Component {
   constructor(props) {
@@ -11,6 +12,13 @@ class Main extends Component {
       contador: 0,
       seleccionPrevia: '',
     };
+  }
+
+  componentDidMount() {
+    Swal.fire({
+      title: "Estas a punto de comenzar tu propia aventura! 🛫",
+      confirmButtonText: "Comenzar 😎",
+  });
   }
 
   componentDidUpdate(prevProps, prevState) {

@@ -20,5 +20,4 @@ class Opciones extends Component {
     );
   }
 }
-
 export default Opciones;
