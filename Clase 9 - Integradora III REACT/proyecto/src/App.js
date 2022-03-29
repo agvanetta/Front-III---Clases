@@ -4,6 +4,8 @@ import "./App.css";
 import Componente from "./Componentes/Componente";
 import Propiedades from "./Componentes/Propiedades";
 import Estado from "./Componentes/Estado";
+import RenderizadoCondicional from "./Componentes/RenderizadoCondicional";
+import RenderElementos from "./Componentes/RenderElementos";
 
 function App() {
   const nombres = ["Agustin", "Pupino", "Apollo", "Luca"];
@@ -29,6 +31,10 @@ function App() {
           />
           <hr></hr>
           <Estado/>
+          <hr></hr>
+          <RenderizadoCondicional/>
+          <hr></hr>
+          <RenderElementos/>
         </section>
       </header>
     </div>
